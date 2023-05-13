@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <h1>Hola!! Usa esta consola para probar tu codigo</h1>
+    
+      <button onclick="agregarPropiedades()">Agregar Propiedades</button>
+    
+      <script>
+        let JSONObj = {};
+    
+        function agregarPropiedades() {
+          JSONObj.propiedad1 = "valor1";
+          JSONObj.propiedad2 = "valor2";
+          console.log(JSONObj);
+        }
+      </script>
+    	<button onclick="agregarPropiedades()">Agregar Nuevas Propiedades</button>
+
+      <script>
+        let JSONObj2 = new Object();
+    
+        function agregarPropiedades() {
+          JSONObj2.propiedad1 = "valor1";
+          JSONObj2.propiedad2 = "valor2";
+          console.log(JSONObj2);
+        }
+      </script>
+
+<button onclick="agregarPropiedades()">Agregar Nombre Libro</button>
+
+<script>
+  let JSONObj3 = { "nombrelibro":"El hacedor", "precio":500 };
+
+  function agregarPropiedades() {
+    JSONObj3.propiedad1 = "nombrelibro";
+    JSONObj3.propiedad2 = "El hacedor";
+    JSONObj3.propiedad3 = "precio:500";
+    console.log(JSONObj3);
+  }
+</script>
+
+  </body>
+</html>
